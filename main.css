@@ -1,0 +1,129 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.sessao-login{
+    position: relative;
+    background-color: rgba(24, 26, 48, 0.884);
+    height: 100vh;
+    width: 100%;
+}
+.login{
+    background-color: #aab3ce;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.726);
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 20rem;
+    width: 25rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: exibir-login 1s;
+}
+@keyframes exibir-login{
+    0%{
+        transform: translate(-60rem, -50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(1);
+        opacity: 1;
+    }
+}
+.icon-user i{
+    background-color: #03254c;
+    height: 8rem;
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 4rem;
+    position: absolute;
+    left: 50%;
+    top: -.5rem;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+.login .form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+.form .form-content{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    row-gap: 1.5rem;
+    height: 7.5rem;
+    width: 70%;
+}
+.form-content input{
+    height: 100%;
+    width: 100%;
+    background-color: #385370;
+    color: #7993b1;
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 0 .5rem;
+    outline: none;
+    transition: .3s;
+}
+.form-content input:hover{
+    background-color: #283b50;
+}
+.form-content i{
+    background-color: #00274e;
+    color: white;
+    height: 100%;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-opcao{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: flex-end;
+}
+.login-opcao div{
+    padding: 0 1.1rem ;
+    font-size: .9rem;
+    color: #586377;
+}
+.login-opcao a{
+    color: #586377;
+}
+.login-enter button{
+    position: absolute;
+    background-color: #adb4ce;
+    color: white;
+    height: 3rem;
+    width: 19rem;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 0 0 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-top: 2px solid #21222f;
+}
